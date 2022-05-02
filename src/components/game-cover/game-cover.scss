@@ -1,8 +1,14 @@
 .game-cover {
   height: 170px;
   width: 100%;
-  background-size: cover;
+  background-size: 115%;
   background-position: center;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
+
+  transition: all 1s;
+
+  &:hover {
+    background-size: 130%;
+  }
 }
