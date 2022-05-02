@@ -9,10 +9,10 @@
   background-color: rgb(36, 47, 41);
   border-radius: 15px;
 
-  &:not(:last-child) {
-    margin-bottom: 30px;
-    margin-right: 50px;
-  }
+  // &:not(:last-child) {
+  //   margin-bottom: 30px;
+  //   margin-right: 50px;
+  // }
 
   &__title {
     font-size: 18px;
@@ -35,8 +35,8 @@
   }
 
   &__buy {
-    position: relative;
-    right: 0;
-    bottom: -12px;
+    position: absolute;
+    right: 6px;
+    bottom: 6px;
   }
 }
