@@ -2,12 +2,7 @@ import classNames from 'classnames';
 
 import './button.scss';
 
-export const Button = ({
-  onClick,
-  type,
-  children,
-  size = 's'
-}) => {
+export const Button = ({ onClick, type, children, size = 's' }) => {
   const btnClass = classNames({
     'btn': true,
     'btn--secondary': type === 'secondary',

@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { CardBlock } from './cart-block/cart-block';
+import { CartBlock } from '../cart-block';
 import './header.scss';
 
 export const Header = () => {
@@ -9,7 +9,7 @@ export const Header = () => {
         <Link to="/" className="header__store-title">Game Store</Link>
       </div>
       <div className="header__wrapper header__cart-btn-wrapper">
-        <CardBlock />
+        <CartBlock />
       </div>
     </div>
   )
