@@ -1,10 +1,10 @@
-import { BiCartAlt } from 'react-icons/bi';
 import { useSelector } from 'react-redux';
+import { BiCartAlt } from 'react-icons/bi';
 import './cart-block.scss';
 
 export const CartBlock = () => {
   const items = useSelector((state) => state.cart.itemsInCart);
-  const totalPice = items.reduce((acc, game) => acc += game.price, 0);
+  const totalPice = items.reduce((acc, item) => (acc += item.price), 0);
 
   return (
     <div className="cart-block">
